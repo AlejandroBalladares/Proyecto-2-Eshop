@@ -174,3 +174,30 @@ h3{
         grid-column: 2/4;
     }
 }
+
+
+/*Nosotros*/
+
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    font-family: var(--fuentePrincipal);
+    color: #fff;
+}
+
+@media (min-width: 768px){ 
+    .nosotros{    
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    }
+}
+
+.nosotros__imagen{
+    grid-row: 1/2;
+}
+
+@media (min-width: 768px){
+    .nosotros__imagen{
+        grid-column: 2/3;
+    }
+}
